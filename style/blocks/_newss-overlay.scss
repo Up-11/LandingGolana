@@ -16,8 +16,8 @@
 	&__body {
 		@include tablet-above {
 			margin-inline: 50px;
+			margin: 2em 4em;
 		}
-		margin: 2em 4em;
 	}
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.795);
@@ -58,7 +58,9 @@
 		}
 	}
 	&__bottom {
-		margin-top: 1em;
+		@include tablet-above {
+			margin-top: 1em;
+		}
 	}
 }
 .image {
