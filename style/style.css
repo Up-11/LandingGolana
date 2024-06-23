@@ -1518,6 +1518,7 @@ h4,
 .large-item {
   max-width: 600px;
   width: 100%;
+  height: 100%;
 }
 
 .small-item {
