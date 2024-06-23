@@ -2,6 +2,7 @@
 	border: none;
 	background: linear-gradient(0deg, #fffafa 0%, #f7f7f7 100%);
 	transition: all 0.35s ease-in-out;
+	width: 80%;
 
 	&:not([open]) {
 		display: block;
