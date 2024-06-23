@@ -2,7 +2,6 @@
 	border: none;
 	background: linear-gradient(0deg, #fffafa 0%, #f7f7f7 100%);
 	transition: all 0.35s ease-in-out;
-	width: 80%;
 
 	&:not([open]) {
 		display: block;
@@ -10,6 +9,10 @@
 		opacity: 0;
 	}
 
+	&:modal {
+		max-width: 100%;
+		max-height: 100%;
+	}
 	&__body {
 		@include tablet-above {
 			margin-inline: 50px;
@@ -18,7 +21,6 @@
 	}
 	&::backdrop {
 		background-color: rgba(0, 0, 0, 0.795);
-		transition: all 0.35s ease-in-out;
 	}
 
 	&__title {

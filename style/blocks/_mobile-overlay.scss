@@ -12,10 +12,14 @@
 		#fbe198 100%
 	);
 
+	
 	&:not([open]) {
 		display: block;
 		transform: scale(0);
+		opacity: 0;
 	}
+
+	
 
 	&__title {
 		display: flex;
