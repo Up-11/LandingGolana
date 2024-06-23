@@ -771,9 +771,9 @@ h4,
 }
 .card.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(40%);
-      -ms-transform: translateX(40%);
-          transform: translateX(40%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .card.element-animation.element-show {
   opacity: 1;
@@ -807,9 +807,9 @@ h4,
 }
 .main__first.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .main__first.element-animation.element-show {
   opacity: 1;
@@ -821,9 +821,9 @@ h4,
 }
 .main__second.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .main__second.element-animation.element-show {
   opacity: 1;
@@ -835,9 +835,9 @@ h4,
 }
 .main__third.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .main__third.element-animation.element-show {
   opacity: 1;
@@ -1142,9 +1142,9 @@ h4,
 }
 .rent__inner.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(-20%);
-      -ms-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 .rent__inner.element-animation.element-show {
   opacity: 1;
@@ -1313,9 +1313,9 @@ h4,
 }
 .partners__grid.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(-20%);
-      -ms-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 .partners__grid.element-animation.element-show {
   opacity: 1;
@@ -1371,9 +1371,9 @@ h4,
 }
 .partners__first.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .partners__first.element-animation.element-show {
   opacity: 1;
@@ -1385,9 +1385,9 @@ h4,
 }
 .partners__second.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .partners__second.element-animation.element-show {
   opacity: 1;
@@ -1399,9 +1399,9 @@ h4,
 }
 .partners__third.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .partners__third.element-animation.element-show {
   opacity: 1;
@@ -1413,9 +1413,9 @@ h4,
 }
 .partners__fourth.element-animation {
   opacity: 0;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 .partners__fourth.element-animation.element-show {
   opacity: 1;
