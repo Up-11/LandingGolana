@@ -16,19 +16,19 @@
 				<nav class="header__menu hidden-mobile">
 					<ul class="header__menu-list">
 						<li class="header__menu-item">
-							<a href="#main" class="header__menu-link">Главная </a>
+							<a href="#main" class="header__menu-link link">Главная </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#about" class="header__menu-link">О нас</a>
+							<a href="#about" class="header__menu-link link">О нас</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#rent" class="header__menu-link">Аренда </a>
+							<a href="#rent" class="header__menu-link link">Аренда </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#partners" class="header__menu-link">Партнерам </a>
+							<a href="#partners" class="header__menu-link link">Партнерам </a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#news" class="header__menu-link">Блог </a>
+							<a href="#news" class="header__menu-link link">Блог </a>
 						</li>
 					</ul>
 				</nav>
@@ -534,7 +534,7 @@
 						<a
 							href="#main"
 							onclick="mobileOverlay.close()"
-							class="mobile-overlay__link"
+							class="mobile-overlay__link link"
 							>Главная</a
 						>
 					</li>
@@ -542,7 +542,7 @@
 						<a
 							onclick="mobileOverlay.close()"
 							href="#about"
-							class="mobile-overlay__link"
+							class="mobile-overlay__link link"
 							>О нас</a
 						>
 					</li>
@@ -550,7 +550,7 @@
 						<a
 							onclick="mobileOverlay.close()"
 							href="#rent"
-							class="mobile-overlay__link"
+							class="mobile-overlay__link link"
 							>Аренда</a
 						>
 					</li>
@@ -558,7 +558,7 @@
 						<a
 							onclick="mobileOverlay.close()"
 							href="#partners"
-							class="mobile-overlay__link"
+							class="mobile-overlay__link link"
 							>Партнеры</a
 						>
 					</li>
@@ -566,7 +566,7 @@
 						<a
 							onclick="mobileOverlay.close()"
 							href="#news"
-							class="mobile-overlay__link"
+							class="mobile-overlay__link link"
 							>Блог</a
 						>
 					</li>
@@ -966,7 +966,7 @@
 	</body>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
-			var menuLinks = document.querySelectorAll('.header__menu-link')
+			var menuLinks = document.querySelectorAll('.link')
 
 			menuLinks.forEach(function (link) {
 				link.addEventListener('click', function (event) {
