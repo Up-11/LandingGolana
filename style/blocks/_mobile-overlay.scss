@@ -14,7 +14,7 @@
 
 	&:not([open]) {
 		display: block;
-		transform: translateX(200%);
+		transform: scale(0);
 	}
 
 	&__title {
