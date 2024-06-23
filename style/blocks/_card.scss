@@ -1,0 +1,32 @@
+.card {
+	max-width: 400px;
+	border-radius: var(--border-radius-card);
+	padding: 1.2em 1.4em;
+	color: var(--color-light);
+	cursor: default;
+	margin-top: 20px;
+
+	&.element-animation {
+		opacity: 0;
+		transform: translateX(40%);
+	}
+
+	&.element-animation.element-show {
+		opacity: 1;
+		transition: all 1s ease-in-out;
+		transform: translateX(0%);
+	}
+
+	&__title {
+		@include fluid-text(32, 20);
+
+		font-weight: 700;
+	}
+
+	&__content {
+		@include fluid-text(18, 16);
+
+		font-weight: 400;
+		margin-top: 22px;
+	}
+}

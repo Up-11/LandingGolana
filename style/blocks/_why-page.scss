@@ -1,0 +1,136 @@
+.partners {
+	color: var(--color-light);
+
+	&__cards {
+		@include row;
+		column-gap: 10px;
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+
+	&__content {
+		z-index: 2;
+	}
+
+	&__card {
+		@include column;
+
+		min-height: 150px;
+		width: 300px;
+		justify-content: center;
+	}
+
+	&__grid {
+		background: linear-gradient(45deg, #ba1717 0%, #da2020 100%);
+		border-radius: var(--border-radius-card);
+		margin-top: 30px;
+
+		@include row;
+		justify-content: space-around;
+
+		@include tablet {
+			flex-direction: column-reverse;
+		}
+
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(-20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+
+	&__disc {
+		font-weight: 400;
+	}
+
+	&__button {
+		padding: 1em 1em;
+		margin-top: 10px;
+	}
+
+	.left {
+		padding: 0.3em 1em;
+		border-radius: var(--border-radius-card);
+
+		@include desktop-above {
+			padding: 4em 4em;
+
+			width: 60%;
+		}
+	}
+
+	.right {
+		@include column;
+
+		justify-content: center;
+		justify-self: center;
+		justify-items: center;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		align-self: center;
+		@include desktop-above {
+			width: 40%;
+		}
+	}
+
+	&__first {
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1.6s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+
+	&__second {
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1.4s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+
+	&__third {
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1.2s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+
+	&__fourth {
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+}
+.title {
+	color: var(--color-dark);
+}

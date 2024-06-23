@@ -1,0 +1,64 @@
+.news-overlay {
+	border: none;
+	background: linear-gradient(0deg, #fffafa 0%, #f7f7f7 100%);
+	transition: all 0.35s ease-in-out;
+
+	&:not([open]) {
+		display: block;
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	&__body {
+		@include tablet-above {
+			margin-inline: 50px;
+		}
+		margin: 2em 4em;
+	}
+	&::backdrop {
+		background-color: rgba(0, 0, 0, 0.795);
+		transition: all 0.35s ease-in-out;
+	}
+
+	&__title {
+		@include fluid-text(48, 20);
+		margin-bottom: 40px;
+	}
+
+	&__image {
+		@include tablet-above {
+			width: 45%;
+		}
+		@include tablet {
+			@include flex-center;
+		}
+	}
+
+	&__row-text {
+		margin-inline: 1em;
+
+		@include tablet {
+			margin-inline: 0;
+		}
+
+		@include tablet-above {
+			width: 40%;
+		}
+	}
+	&__top {
+		@include row;
+
+		justify-content: center;
+		margin-top: 1em;
+		@include tablet {
+			@include column;
+		}
+	}
+	&__bottom {
+		margin-top: 1em;
+	}
+}
+.image {
+	max-width: 600px;
+	width: 100%;
+}

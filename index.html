@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Golana</title>
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="header__inner container">
+				<a href="#Main" class="header__logo logo">
+					<img src="images/logo.png" alt="Golana" width=110" class="logo_image"
+					loading="lazy" />
+				</a>
+				<nav class="header__menu hidden-mobile">
+					<ul class="header__menu-list">
+						<li class="header__menu-item">
+							<a href="#main" class="header__menu-link">Главная </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#about" class="header__menu-link">О нас</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#rent" class="header__menu-link">Аренда </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#partners" class="header__menu-link">Партнерам </a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#news" class="header__menu-link">Блог </a>
+						</li>
+					</ul>
+				</nav>
+				<a
+					href="https://golanagroup.ru/"
+					type="button"
+					class="header__button button button-transparent hidden-mobile"
+				>
+					Интернет-магазин
+				</a>
+				<button
+					class="button__burger-menu burger-button visible-mobile"
+					onclick="mobileOverlay.showModal()"
+				>
+					<span class="visually-hidden">Открыть навигационное меню</span>
+				</button>
+			</div>
+		</header>
+		<main class="container main-page" id="main">
+			<section class="main">
+				<div class="main__inner">
+					<h3 class="main__small-text">Лучшее кофе в стране</h3>
+					<h1 class="main__large-text">Компания</h1>
+					<h1 class="main__large-text rotate-text">Golana</h1>
+					<h2 class="main__medium-text">Наш интернет магазин</h2>
+					<div class="main__button-container">
+						<a
+							href="https://golanagroup.ru/"
+							type="button"
+							class="main__button button button-bw"
+						>
+							Перейти
+						</a>
+					</div>
+				</div>
+				<div class="main__card-list margin-top container">
+					<div
+						class="card main__first element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#e65f3d 0%,
+								#b44c31 47%,
+								#8f1d00 100%
+							);
+						"
+					>
+						<h1 class="card__title">На рынке с 2002 года</h1>
+						<h4 class="card__content">
+							Наша компания работает уже более 20 лет, что свидетельствует о
+							нашем опыте и надежности. Это длительное присутствие на рынке
+							позволяет нам лучше понимать потребности клиентов и адаптироваться
+							к изменяющимся условиям.
+						</h4>
+					</div>
+					<div
+						class="card main__second element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#39c08d 0%,
+								#47ae86 47%,
+								#28bd84 100%
+							);
+						"
+					>
+						<h1 class="card__title">Большой выбор</h1>
+						<h4 class="card__content">
+							Мы предлагаем широкий ассортимент товаров, чтобы удовлетворить
+							потребности различных клиентов. Это может включать в себя
+							разнообразие категорий продукции, брендов и ценовых категорий, что
+							позволяет каждому клиенту найти то, что ему нужно.
+						</h4>
+					</div>
+					<div
+						class="card main__third element-animation"
+						style="
+							background: linear-gradient(
+								45deg,
+								#913de6 0%,
+								#8a2fe4 61%,
+								#b06ef2 100%
+							);
+						"
+					>
+						<h1 class="card__title">Удобство</h1>
+						<h4 class="card__content">
+							Мы работаем над тем, чтобы процесс приобретения товаров был
+							максимально удобным для наших клиентов. Это может включать в себя
+							простоту заказа, удобные методы оплаты, качественное обслуживание
+							клиентов и поддержка на всех этапах сотрудничества.
+						</h4>
+					</div>
+				</div>
+			</section>
+			<section class="about container" id="about">
+				<div class="about__row">
+					<h4 class="about__bubble top element-animation">
+						Более 500 клиентов
+					</h4>
+					<h4 class="about__bubble top-right element-animation">
+						На рынке с 2002 года
+					</h4>
+				</div>
+				<h1 class="about__title">Golana Group</h1>
+				<div class="about__row">
+					<h4 class="about__bubble right element-animation">Большой выбор</h4>
+					<h4 class="about__bubble bottom element-animation">Удобство</h4>
+					<h4 class="about__bubble bottom-right element-animation">
+						Более 1000 наименований
+					</h4>
+				</div>
+			</section>
+			<section class="rent container" id="rent">
+				<div class="rent__inner element-animation">
+					<div class="rent__image-container">
+						<img src="images/coffee.svg" class="rent__image" alt="" />
+					</div>
+					<div class="rent__content">
+						<h2 class="rent__title">Аренда кофейного оборудования</h2>
+						<h4 class="rent__discription">
+							Вам нравится наш кофе и устраивает наша ценовая политика, но у вас
+							нет кофейного оборудования? В этом случае мы можем предложить
+							кофемашину на условиях аренды. При данной форме сотрудничества вы
+							не привязаны к объёму выборки нашей продукции. Более того, на вас
+							будут распространяться скидки на кофе, при условии разовой закупки
+							от 15 кг в предоплату. Важно отметить - мы предоставляем
+							оборудование исключительно при условии использования нашего кофе.
+						</h4>
+						<div class="rent__button-container">
+							<a
+								href="tel:+7 (391) 98-656-98"
+								class="rent__phone-number rent__title"
+								>+7 (391) 98-656-98</a
+							>
+
+							<a
+								href="https://golanagroup.ru/company/"
+								type="button"
+								class="rent__button button"
+							>
+								Подробнее
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners container" id="partners">
+				<div class="partners__grid element-animation">
+					<div class="partners__side left">
+						<h2 class="partners__side-title">Условия для партнеров</h2>
+						<div class="partners__disc">
+							<h4>Гарантии, которые вы получите благодаря сотрудничеству:</h4>
+							<ul>
+								<li>Полное соответствие качества продукции</li>
+								<li>Гибкая стоимость, в зависимости от объёма партии</li>
+								<li>Возможность дегустации продукции на этапе выбора</li>
+								<li>
+									Помощь в подборе нужных сортов кофе в соответствии с
+									потребностями вашего бизнеса
+								</li>
+								<li>
+									Личный менеджер, отвечающий за сборку заказов и организацию
+									доставки продукции
+								</li>
+								<li>Своевременная поставка продукции в полном объёме</li>
+							</ul>
+						</div>
+						<a
+							href="https://golanagroup.ru/partners/"
+							type="button"
+							class="partners__button button button-red"
+						>
+							Подробнее
+						</a>
+					</div>
+					<div class="partners__side right">
+						<img
+							src="images/heands.svg"
+							width="400"
+							alt=""
+							class="partners_icon"
+						/>
+					</div>
+				</div>
+				<h1 class="partners__title title">Почему Golana?</h1>
+				<div class="partners__cards">
+					<div
+						class="partners__card card partners__first element-animation"
+						style="background: linear-gradient(45deg, #1c1717 0%, #363535 100%)"
+					>
+						<img src="images/secondCoffee.svg" width="400" alt="" />
+						<h4 class="card__content content-up">
+							Цена позволяет поддерживать высокую маржинальность напитков
+						</h4>
+					</div>
+					<div
+						class="partners__card card partners__second element-animation"
+						style="background: linear-gradient(45deg, #022331 0%, #094b67 100%)"
+					>
+						<img src="images/secondCoffee.svg" width="400" alt="" />
+						<h4 class="card__content">
+							Ассортимент отвечает запросам профессионалов
+						</h4>
+					</div>
+					<div
+						class="partners__card card partners__third element-animation"
+						style="background: linear-gradient(45deg, #1f4734 0%, #115535 100%)"
+					>
+						<img src="images/secondCoffee.svg" width="400" alt="" />
+
+						<h4 class="card__content">
+							Потрясающий, насыщенный вкус нравится потребителям
+						</h4>
+					</div>
+					<div
+						class="partners__card card partners__fourth element-animation"
+						style="background: linear-gradient(45deg, #19002e 0%, #2b133e 100%)"
+					>
+						<img src="images/secondCoffee.svg" width="400" alt="" />
+
+						<h4 class="card__content">
+							Подходит для приготовления различных напитков на основе кофе, в
+							том числе и по авторским рецептам
+						</h4>
+					</div>
+				</div>
+			</section>
+			<section class="news container" id="news">
+				<h1 class="news__title title">Блог</h1>
+				<div class="news__inner">
+					<div class="news__item-container large-container">
+						<div class="news__item large-item element-animation">
+							<img src="images/news_image-1.png" alt="" class="news__image" />
+							<div class="news__content">
+								<h3 class="news__content__title">
+									4 фактора, которые влияют на вкус кофе
+								</h3>
+								<p class="news__content__text">
+									Каждый день нам приходится отвечать на вопросы посетителей о
+									том, как готовить хороший кофе. В этой статье мы расскажем
+									основные советы.
+								</p>
+								<a
+									onclick="newsOverlay1.showModal()"
+									class="button button-small news__button"
+									>Посмотреть</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="news__item-container small-container">
+						<div class="small-item-row">
+							<div class="news__item small-item element-animation">
+								<img
+									src="images/news-image-2.png "
+									alt=""
+									class="news__image small-image"
+									width="290"
+									height="193"
+								/>
+								<div class="news__content small">
+									<h3 class="news__content__title title-small">
+										Раф-кофе – что это такое?
+									</h3>
+									<a
+										onclick="newsOverlay2.showModal()"
+										class="button button-small news__button"
+										>Посмотреть</a
+									>
+								</div>
+							</div>
+							<div class="news__item small-item element-animation">
+								<img
+									src="images/ni-4.png"
+									alt=""
+									class="news__image small-image"
+									width="290"
+									height="193"
+								/>
+								<div class="news__content small">
+									<h3 class="news__content__title title-small">
+										Факторы влияющие на вкус эспрессо
+									</h3>
+									<a
+										onclick="newsOverlay4.showModal()"
+										class="button button-small news__button"
+										>Посмотреть</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="small-item-row second-row">
+							<div class="news__item small-item element-animation">
+								<img
+									src="images/ni-5.png"
+									alt=""
+									class="news__image small-image"
+									width="290"
+									height="193"
+								/>
+								<div class="news__content small">
+									<h3 class="news__content__title title-small">
+										Чем полезен кофейный скраб?
+									</h3>
+									<a
+										onclick="newsOverlay5.showModal()"
+										class="button button-small news__button"
+										>Посмотреть</a
+									>
+								</div>
+							</div>
+							<div class="news__item small-item element-animation">
+								<img
+									src="images/ni-3.png"
+									alt=""
+									class="news__image small-image"
+									width="290"
+									height="193"
+								/>
+
+								<div class="news__content small">
+									<h3 class="news__content__title title-small">
+										Арабика и робуста – в чем разница?
+									</h3>
+									<a
+										onclick="newsOverlay3.showModal()"
+										class="button button-small news__button"
+										>Посмотреть</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<h1 class="title">Видеоролик</h1>
+			<section class="video container element-animation">
+				<iframe
+					class="video"
+					src="https://www.youtube.com/embed/EmSbKgqQSB4?si=9ghGfJSs4sWaCaFh"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__inner container">
+				<div class="footer__column">
+					<h4>Навигация</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="#Main" class="footer__link">Главная</a>
+						</li>
+						<li class="footer__item">
+							<a href="#About" class="footer__link">О нас</a>
+						</li>
+						<li class="footer__item">
+							<a href="#Rent" class="footer__link">Аренда</a>
+						</li>
+						<li class="footer__item">
+							<a href="#Partners" class="footer__link">Партнеры</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>О компании</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/help/" class="footer__link"
+								>Оплата и доставка</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/contacts/" class="footer__link"
+								>Контакты</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								href="https://golanagroup.ru/arenda-oborudovania/"
+								class="footer__link"
+								>Аренда оборудования</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://golanagroup.ru/partners/" class="footer__link"
+								>Партнерам</a
+							>
+						</li>
+						<li class="footer__item">
+							<a
+								href="https://golanagroup.ru/company/vacancy/"
+								class="footer__link"
+								>Вакансии</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Интересно</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="https://shop.golanagroup.ru/blog/" class="footer__link"
+								>Блог о кофе</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="https://shop.golanagroup.ru/sale/" class="footer__link"
+								>Актуальные акции</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Оставайтесь на связи</h4>
+					<ul class="footer__list horizontal">
+						<li class="footer__item">
+							<a href="https://vk.com/golana_coffee" class="footer__link">
+								<img src="images/icons8-vk-50.png" width="50" alt="" />
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="https://t.me/golana24" class="footer__link">
+								<img src="images/icons8-телеграм-50.png" width="50" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h4>Наши контакты</h4>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="tel:" class="footer__link"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-telephone-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+									/></svg
+								>+7(391) 98-656-98</a
+							>
+						</li>
+						<li class="footer__item">
+							<a href="mail:" class="footer__link"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-envelope-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+									/></svg
+								>sales@golanagroup.ru</a
+							>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link-non-hover"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-house-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+									/>
+									<path
+										d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
+									/></svg
+								>г. Красноярск, ул. Калинина 39 "в"</a
+							>
+						</li>
+					</ul>
+				</div>
+				<br class="line" />
+			</div>
+		</footer>
+		<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button type="submit" class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="mobile-overlay__body">
+				<h1 class="mobile-overlay__title">Меню</h1>
+				<ul class="mobile-overlay__list">
+					<li class="mobile-overlay__item">
+						<a
+							href="#main"
+							onclick="mobileOverlay.close()"
+							class="mobile-overlay__link"
+							>Главная</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#about"
+							class="mobile-overlay__link"
+							>О нас</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#rent"
+							class="mobile-overlay__link"
+							>Аренда</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#partners"
+							class="mobile-overlay__link"
+							>Партнеры</a
+						>
+					</li>
+					<li class="mobile-overlay__item">
+						<a
+							onclick="mobileOverlay.close()"
+							href="#news"
+							class="mobile-overlay__link"
+							>Блог</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://golanagroup.ru/"
+							type="button"
+							class="mobile-overlay__button button button-transparent visible-mobile"
+						>
+							Интернет-магазин
+						</a>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		<dialog class="news-overlay" id="newsOverlay1">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="news-overlay__body">
+				<h1 class="news-overlay__title">
+					4 фактора, которые влияют на вкус кофе
+				</h1>
+				<div class="news-overlay__top">
+					<div class="news-overlay__image">
+						<img
+							src="images/news_image-1.png"
+							alt=""
+							class="news__image image"
+							width="600"
+						/>
+					</div>
+					<div class="news-overlay__row-text">
+						<p>
+							Каждый день нам приходится отвечать на вопросы посетителей о том,
+							как готовить хороший кофе. Многие вопросы закономерно повторяются
+							из раза в раз, а тонкости не особо меняются с течением времени.
+							Поэтому мы решили подготовить общий информационный материал,
+							который пригодится и домашним кулинарам, и сотрудникам кофеен.
+						</p>
+					</div>
+				</div>
+				<div class="news-overlay__bottom">
+					<p>
+						<b>1. Самое важное правило</b> — стараться использовать максимально
+						свежее зерно. Если его обжарили свыше 60 дней назад, качество
+						напитка вряд ли обрадует ценителей. Именно таков период времени, за
+						который эфирные масла будут окислены. Одновременно с этим происходит
+						испарение компонентов, отвечающих за вкус и аромат. Что немаловажно,
+						такие процессы идут даже в закрытых пачках при хранении по всем
+						установленным правилам. В результате кофе кажется прогорклым и
+						начисто лишается приятного запаха. Такие простые правила позволят
+						обеспечить комфорт для частных потребителей.
+					</p>
+					<br />
+					<p>
+						<b>2.Нельзя хранить зерно открытым более 7 суток.</b> После того как
+						упаковка нарушена, ароматические компоненты начинают окисляться
+						кислородом воздуха и улетучиваются в течение недели. В результате
+						характерный яркий вкус будет утрачен. На упаковках требуется
+						отмечать дату распечатки. Это позволит не ошибиться и использовать
+						лишь свежие зерна. Для дома советуют брать пачки не крупнее 0,25
+						килограмма. Только кажется, что это слишком много на неделю — в
+						реальности пару чашек объемом 0,2 литра делают в капельной кофеварке
+						из 30 граммов зерен; значит — даже при ежедневном расходе всего
+						одной чашки выпить всю пачку можно за 8 — 9 суток.
+					</p>
+					<br />
+					<p>
+						<b>
+							3.Молотое зерно, извлеченное из пачки, должно быть приготовлено
+							максимум за 30 минут — в идеале немедленно.
+						</b>
+						Через полчаса продукт почти лишится эфирных масел, обеспечивающих
+						приятный вкус и аромат. Убедиться в таком эффекте несложно: надо
+						только оставить размолотый кофе на ½ часа на воздухе, потом
+						размолоть свежую порцию и сверить вкус. В первой чашке кофе будет
+						затхлый и неприятный на вкус. Если же зерно полежит на открытом
+						воздухе не полчаса, а 2,5 часа, то напиток полностью утратит всякое
+						качество и получит землистый привкус. В кофейнях советуют
+						размалывать свежую порцию зерен, если прежняя приготовлена более 60
+						минут назад
+					</p>
+					<br />
+					<p>
+						<b>4.При приготовлении кофе критически важно качество воды.</b> Ее
+						оптимальная минерализация составляет не ниже 75 и не выше 150
+						миллиграммов на литр. Только такая вода обеспечит оптимальное
+						поглощение вкусовых и ароматических веществ из кофе. Из него должно
+						быть извлечено от 18 до 22% веществ. Если вода поглощает больше
+						вкусовых компонентов, то напиток приобретет неприятные нотки —
+						появятся древесный и полынный привкусы, а часть дегустаторов
+						отмечает присутствие лекарственных привкусов. Содержащиеся в воде
+						минералы влияют на способность растворения веществ, содержащихся в
+						кофе. Дистиллированная вода поглощает их максимально эффективно;
+						высоко минерализованная вода почти неспособна их вбирать, и потому
+						необходимо искать «золотую середину». Та жидкость, которая кажется
+						приятной на вкус, обычно содержит много минералов, и потому
+						малопригодна для приготовления кофе. Точно определять минерализацию
+						помогает TDS-метр.
+					</p>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="news-overlay" id="newsOverlay2">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="news-overlay__body">
+				<h1 class="news-overlay__title">Раф-кофе – что это такое?</h1>
+				<div class="news-overlay__top">
+					<div class="news-overlay__image">
+						<img
+							src="images/news-image-2.png"
+							alt=""
+							class="news__image image"
+							width="600"
+						/>
+					</div>
+					<div class="news-overlay__row-text">
+						<p>
+							А вы знали, что Раф-кофе – это чисто российский напиток, который
+							был придуман путем экспериментирования в начале 90х годов в Москве
+							в кофейне Coffee Bean? Данную кофейну открыл американец Джерри
+							Рудитсер и в ней работало тогда всего три человека: Глеб Невейкин,
+							Артем Берестов и Галина Самохина. На тот момент там готовили
+							только эспрессо, а молоко и сливки подавали бесплатно. Но одному
+							из посетителей не нравился предлагаемый напиток и бариста стали
+							проводить эксперименты над напитками со сливками, молоком,
+							взбитием и добавлением ванильного сахара, чтобы угодить гостю, имя
+							которого было Рафаэль Тимербаев. В итоге Рафаэлю понравился
+							напиток со вкусом подтаявшего мороженного и он стал его заказывать
+							постоянно. Через какой-то промежуток времени и его друзья и друзья
+							друзей стали просить «кофе как Рафу», так в меню появилась
+							отдельная позиция «как Рафу», а после и просто «Раф».
+						</p>
+					</div>
+				</div>
+				<div class="news-overlay__bottom">
+					<b>Разберемся в разновидностях рафа.</b> <br />
+					<p>
+						Классический раф – напоминает сливочный пломбир или молочный
+						коктейль без добавок. Цитрусовый раф готовят из свежей цедры лайма и
+						апельсина, а также тростникового сахара, которые потом смешивают с
+						эспрессо и сливками. Для лавандового рафа сушеные цветы лаванды
+						перемалывают в пудру вместе с сахаром, добавляют их в смесь из
+						сливок и эспрессо, а затем взбивают все компоненты вместе. Есть и
+						региональные разновидности рафа. Сибирский раф или Кленовый готовят
+						в сети кофеин «Академия кофе». В сети Green House – авторский
+						Сосновый раф, в Green Green – канадский, фисташковый, апельсиновый,
+						медовый и черничный раф. Бариста меняют не только добавки, но и
+						структуру напитка. Например, раф с карамелью готовят на молоке, а не
+						на сливках. Потому что сама карамель сварена из сливок с сахаром.
+						Еще можно готовить раф на сахарозаменителях — сукралозе и инулине.
+						Эксперименты с рафом проводят не только для того, чтобы получить
+						необычный вкус, в результате авторский раф становится визитной
+						карточкой многих кофеен. Раф оставляет простор для творчества,
+						по-этому никогда не отказывайте себе пропробовать новый авторский
+						напиток в новой кофейне. К сожалению, раф не распространен за
+						пределами СНГ, но думаем если раф покорил всю Россию и страны СНГ,
+						то скоро он покорит и весь мир.
+					</p>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="news-overlay" id="newsOverlay3">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="news-overlay__body">
+				<h1 class="news-overlay__title">Арабика и робуста – в чем разница?</h1>
+				<div class="news-overlay__top">
+					<div class="news-overlay__image">
+						<img
+							src="images/ni-3.png"
+							alt=""
+							class="news__image image"
+							width="600"
+						/>
+					</div>
+					<div class="news-overlay__row-text">
+						<p>
+							Какой ваш любимый кофе: Арабика или Робуста? В чем разница между
+							ними? В данной статье мы подробно разберемся во всех отличиях
+							между данными видами кофе. Часто ловили себя на мысли в магазинах
+							или супермаркете перед прилавком с кофе – какой же кофе выбрать?
+							Нынешнее разнообразие сортов и видов кофе настолько велико, что
+							легко можно потеряться. Давайте разберемся с вами с основными
+							видами и сортами кофе на рынке, для того, чтобы вы могли
+							определить для себя подходящий кофе.
+						</p>
+					</div>
+				</div>
+				<div class="news-overlay__bottom">
+					<b> В мире принято выделять четыре основных видов кофе: </b> <br />
+					<ul>
+						<li>Арабика или аравийский кофе</li>
+						<li>Робуста или конголезский кофе</li>
+
+						<li>Либерика</li>
+						<li>Эксцельса или высокий кофе</li>
+					</ul>
+					<p>
+						Но только арабика и робуста выращиваются в мире в промышленных
+						масштабах: примерно 70% арабика и 30% робуста. Либерика и эксцельса
+						сходны по качеству с робустой, но не так приятны по вкусу. Либерика
+						применяется только в виде смеси для придачи напитку крепости. А
+						эксцельсия не применяется вообще ни где.И так, если вы любитель
+						насыщенного, крепкого кофе с горчинкой, то вам прекрасно подойдет
+						кофе робуста. А для любителей нежного аромата и приятного вкуса, -
+						арабика. Интенсивным и кислотным вкус арабики делают содержание
+						липидов и сахаров. В разных сортах арабики вы можете ощутить нотки
+						ягод, цитруса, орехов или цветов. Также на вкусовые свойства кофе
+						влияет страна-производитель, читайте об этом в нашей статье (ссылка
+						на статью).
+					</p>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="news-overlay" id="newsOverlay4">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="news-overlay__body">
+				<h1 class="news-overlay__title">Факторы влияющие на вкус эспрессо</h1>
+				<div class="news-overlay__top">
+					<div class="news-overlay__image">
+						<img
+							src="images/ni-4.png"
+							alt=""
+							class="news__image image"
+							width="600"
+						/>
+					</div>
+					<div class="news-overlay__row-text">
+						<p>
+							Эспрессо представляет собой удивительно сложный и увлекательный
+							напиток, требующий высокой стабильности приготовления. В процессе
+							экстракции он приобретает сиропообразную консистенцию и насыщенный
+							вкус, обусловленный эфирными маслами в кофейных зернах.
+						</p>
+					</div>
+				</div>
+				<div class="news-overlay__bottom">
+					<p>
+						<b>1. Качество кофейных зерен: </b> <br />
+						Свежеобжаренные зерна достигают пика качества через 7-14 дней после
+						обжарки. Хранение воздухонепроницаемых упаковок или в стеклянных
+						банках может продлить срок годности до 12 месяцев. Старые зерна
+						могут повлиять на аромат и вкус эспрессо.
+					</p>
+					<p>
+						<b>2. Степень помола кофе: </b> <br />
+						* Температура и давление воды во время экстракции зависят от степени
+						помола. Грубая степень помола приводит к слабому и кислому эспрессо,
+						а излишне мелкая - к горькому и пересушенному вкусу.
+					</p>
+					<p>
+						<b>3. Дозировка и темперовка: </b> <br />
+						* Правильная дозировка и темперовка важны для достижения баланса во
+						вкусе. Недодозированный кофе склонен к высушенному и водянистому
+						вкусу, а передозированный - к горечи и сухости.
+					</p>
+					<p>
+						<b> 4. Качество воды: </b> <br />
+						* Качество воды также существенно влияет на вкус эспрессо. Слишком
+						мягкая или твердая вода может повлиять на итоговый вкус напитка.
+					</p>
+					<p>
+						<b> 5. Процесс экстракции: </b> <br />
+						* Время, температура, давление и соотношение кофе к воде определяют
+						качество процесса экстракции. Недостаточная или излишняя экстракция
+						может привести к кислому или горькому вкусу эспрессо.
+					</p>
+					<p>
+						<b> 6. Степень обжарки: </b> <br />
+						* Разные степени обжарки придают кофе различные вкусовые качества -
+						от сладковатых и ягодных нот до горьких и шоколадных оттенков.
+						Каждый из этих параметров играет ключевую роль в формировании вкуса
+						и аромата эспрессо. Экспериментируйте с разными настройками, чтобы
+						найти идеальное сочетание для вашего напитка!
+					</p>
+				</div>
+			</div>
+		</dialog>
+		<dialog class="news-overlay" id="newsOverlay5">
+			<form class="mobile-overlay__close-button-wrapper" method="dialog">
+				<button class="mobile-overlay__close-button cross-button">
+					<span class="visually-hidden">Закрыть меню навигации</span>
+				</button>
+			</form>
+			<div class="news-overlay__body">
+				<h1 class="news-overlay__title">Арабика и робуста – в чем разница?</h1>
+				<div class="news-overlay__top">
+					<div class="news-overlay__image">
+						<img
+							src="images/ni-5.png"
+							alt=""
+							class="news__image image"
+							width="600"
+						/>
+					</div>
+					<div class="news-overlay__row-text">
+						<p>
+							Польза кофейного скраба Натуральный кофе используется в качестве
+							ингредиента во многих косметических скрабах. При этом средства
+							домашнего изготовления не менее эффективен, чем покупкой. Он
+							оказывает следующее воздействие на кожу: Кофейные скрабы
+							способствуют выводу токсинов; Они не вызывают аллергии, безопасен,
+							не вызывает раздражения; Скрабы эффективно очищают, оказывает
+							антибактериальный эффект; Средства очищают поры; Молотый кофе
+							оказывает массажный эффект, способствует устранению оттенков, что
+							убирает лишние объемы; Выравнивает тон, кофе слегка окрашивает
+							кожу, однако этот эффект легко смывается водой, однако скраб
+							способствует тонизированию, улучшает микроциркуляцию; Средства
+							оказывают тонизирующее воздействие, делает кожу более гладкой,
+							подтянутой; Скрабы на основе кофе оказывают ароматерапевтический
+							эффект, они заряжают энергией, бодряд.
+						</p>
+					</div>
+				</div>
+				<div class="news-overlay__bottom">
+					<h2>Процесс приготовления</h2>
+					<p>
+						Для приготовления скрабов может использоваться как заваренный, так
+						незаваренный молотый кофе. При этом эффективность средств будет
+						примерно одинакова. Однако заваренный кофе мягче, оказывает более
+						щадящее воздействие. Также возможно использование кофейной гущи из
+						гейзерных или автоматических кофеварок. Если гуща пропитана водой,
+						ее необходимо отжать Кофе можно добавлять в крема, лосьоны, масла.
+						При этом гуща усиливает эффект от применения других косметических
+						средств. При использовании кофейного скраба важно организовать
+						правильное хранение. Срок годности средств составляет не более 5
+						дней, в ином случае масса может зацвести. При приготовлении скраба
+						могут использоваться различные дополнительные компоненты. В качестве
+						этого может использоваться мед, масло, сахар, солью.
+					</p>
+					<h2>Скраб с медом</h2>
+					<p>
+						Медово-кофейный скраб прекрасно подходит для ухода за сухой и
+						проблемной кожей. Мед прекрасно помогает от черных точек, угревой
+						сыпи, он питает, насыщает питательными веществами. Для приготовления
+						медово-кофейный скраба необходимо смешать молотый кофе, крем (или
+						сметана), растопленный мед. Мед легко топится в микроволновой печи.
+						Состав наносится на сухую чистую кожу массажными движениями. После
+						этого его рекомендуется оставить на несколько минут, чтобы впитались
+						жидкие компоненты.
+					</p>
+					<h2>Кофейно-сахарный скраб</h2>
+					<p>
+						Скраб на основе кофе и сахара прекрасно тонизирует и насыщает кожу
+						микроэлементами. Использовать его особенно рекомендуется в холодное
+						время года. Кроме того, при использовании для ухода за кожей ног и
+						ягодиц, скрабы на основе кофе и сахара способствуют удалению эффекта
+						«апельсиновой корки». Для приготовления состава потребуется молотый
+						кофе, сахар и растительное масло, желательно оливковое.
+					</p>
+					<h2>Скраб с кофе и эфирными маслами</h2>
+					<p>
+						Для достижения наилучшего эффекта можно приготовить скраб на основе
+						кофе и эфирных масел. Тип масла подбирается в зависимости от
+						имеющихся проблем. Для увлажнения и питания можно использовать
+						кокосовое или оливковое масло. Масло чайного дерева оказывает
+						антибактериальный эффект, успешно борется с высыпаниями и акне.
+						Действие розового масла направлено борьбу с морщинами. Скрабы на
+						основе кофе - доступное и эффективное косметическое средства. При
+						правильном использовании они способны улучшить состояние кожи,
+						тонизировать ее, улучшить цвет лица.изировать ее, улучшить цвет
+						лица.
+					</p>
+				</div>
+			</div>
+		</dialog>
+		<button id="scroll-to-top">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="45"
+				height="45"
+				fill="currentColor"
+				class="bi bi-arrow-up-short"
+				viewBox="0 0 16 16"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"
+				/>
+			</svg>
+		</button>
+	</body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var menuLinks = document.querySelectorAll('.header__menu-link')
+
+			menuLinks.forEach(function (link) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault()
+
+					var targetId = this.getAttribute('href').substring(1)
+					var targetElement = document.getElementById(targetId)
+
+					window.scrollTo({
+						top: targetElement.offsetTop,
+						behavior: 'smooth',
+					})
+				})
+			})
+		})
+	</script>
+	<script src="scripts/Animation.js"></script>
+	<script src="scripts/toTop.js"></script>
+	<script src="scripts/HideHeader.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

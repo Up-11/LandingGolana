@@ -1,0 +1,100 @@
+.rent {
+	&__inner {
+		@include row;
+
+		@include tablet {
+			@include column;
+		}
+		padding: 1em 2em;
+
+		@include mobile {
+			padding: 1em 2em;
+		}
+
+		border-radius: var(--border-radius-large);
+		color: var(--color-light);
+		background: linear-gradient(45deg, #eea23f 0%, #d38520 100%);
+
+		&.element-animation {
+			opacity: 0;
+			transform: translateX(-20%);
+		}
+
+		&.element-animation.element-show {
+			opacity: 1;
+			transition: all 1s ease-in-out;
+			transform: translateX(0);
+		}
+	}
+	&__image-container {
+		@include row;
+		@include desktop-above {
+			width: 40%;
+		}
+		justify-content: center;
+		padding: 1em 1em;
+	}
+
+	&__content {
+		@include desktop-above {
+			width: 60%;
+		}
+	}
+
+	&__image {
+		@include tablet {
+			width: 300px;
+		}
+		color: white;
+		@include desktop-above {
+			width: 300px;
+		}
+	}
+
+	&__title {
+		@include fluid-text(40, 20);
+
+		font-weight: 700;
+	}
+
+	&__discription {
+		@include fluid-text(26, 16);
+
+		font-weight: 500;
+		margin-top: 20px;
+	}
+
+	&__button-container {
+		@include row;
+
+		margin-top: 10px;
+
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include tablet {
+			justify-content: center;
+		}
+	}
+
+	&__phone-number {
+		@include hover {
+			color: var(--color-dark-alt);
+		}
+	}
+
+	&__button {
+		@include fluid-text(20, 16);
+
+		@include tablet-above {
+		}
+		@include hover {
+			text-align: center;
+			background-color: var(--color-main-dark);
+		}
+
+		@include mobile {
+			margin-top: 10px;
+		}
+	}
+}

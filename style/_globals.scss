@@ -1,0 +1,102 @@
+body {
+	@include fluid-text(18, 16);
+
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	line-height: 1.28;
+	color: var(--color-dark);
+	background-color: var(--color-light);
+	overflow-x: hidden;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 500;
+}
+
+h1,
+.h1 {
+	@include fluid-text(60, 43);
+}
+
+h2,
+.h2 {
+	@include fluid-text(40, 36);
+}
+
+h3,
+.h3 {
+	@include fluid-text(30, 26);
+}
+
+h4,
+.h4 {
+	@include fluid-text(20, 18);
+}
+
+.main-page {
+	margin-top: 200px;
+}
+
+.margin-top {
+	margin-top: 160px;
+}
+
+#scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	background-color: var(--color-main-dark);
+	color: white;
+	width: 50px;
+	height: 50px;
+
+	text-align: center;
+	border-radius: 50%;
+	border: none;
+
+	z-index: 1000;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	transform: scale(0.9);
+	cursor: pointer;
+}
+#scroll-to-top:hover {
+	background-color: rgb(32, 32, 32);
+}
+#scroll-to-top.show {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1);
+}
+.bi-telephone-fill,
+.bi {
+	position: relative;
+	top: 2px;
+	right: 4px;
+}
+.title {
+	@include flex-center;
+
+	margin: 30px;
+}
+.video {
+	@include flex-center;
+	width: 100%;
+	height: 500px;
+}

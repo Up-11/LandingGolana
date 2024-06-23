@@ -1,0 +1,30 @@
+.rotate-text {
+	color: var(--color-light);
+	background-color: var(--color-main-dark);
+	border-radius: var(--border-radius-large);
+	position: relative;
+	bottom: 60px;
+	animation: RotateAnimation 0.7s ease-in-out forwards;
+
+	@include desktop {
+		bottom: 40px;
+	}
+	@include tablet {
+		bottom: 20px;
+	}
+	@include mobile {
+		bottom: 15px;
+	}
+}
+
+@keyframes RotateAnimation {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		transform: rotate(-2deg);
+	}
+}

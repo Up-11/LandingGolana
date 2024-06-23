@@ -1,0 +1,65 @@
+.button {
+	@include flex-center(true);
+
+	height: var(--button-height);
+	padding-inline: 15px;
+	font-size: 18px;
+	color: var(--color-light);
+	background-color: var(--color-dark);
+	border: var(--border);
+	border-radius: var(--border-radius);
+
+	@include hover {
+		background-color: var(--color-dark);
+		color: var(--color-light);
+	}
+
+	&-transparent {
+		background-color: transparent;
+		color: var(--color-dark);
+	}
+
+	&-small {
+		background-color: transparent;
+		color: var(--color-dark);
+		height: 40px;
+		padding-inline: 10px;
+		@include hover {
+			background-color: var(--color-dark);
+			color: var(--color-light);
+		}
+	}
+
+	&-red {
+		color: crimson;
+
+		@include hover {
+			background-color: transparent;
+		}
+	}
+
+	&-bw {
+		background-color: var(--color-light);
+		border-radius: var(--border-radius-large);
+		padding-inline: 4em;
+		color: var(--color-dark);
+		border: none;
+		box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.288);
+
+		animation: BWButtonAnimation 0.7s ease-in-out forwards;
+		&:hover {
+			background-color: var(--color-dark);
+			color: var(--color-light);
+		}
+	}
+}
+@keyframes BWButtonAnimation {
+	0% {
+		transform: translateY(220%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

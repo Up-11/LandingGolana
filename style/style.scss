@@ -1,0 +1,7 @@
+@import 'normalize', 'fonts', 'variables', 'mixins', 'media', 'globals', 'utils';
+
+@import 'blocks/button', 'blocks/burger-button', 'blocks/header',
+	'blocks/cross-button', 'blocks/mobile-overlay', 'blocks/rotate-text',
+	'blocks/card', 'blocks/main-page', 'blocks/about-page', 'blocks/rent-page',
+	'blocks/why-page', 'blocks/news-page', 'blocks/newss-overlay',
+	'blocks/animation', 'blocks/footer';

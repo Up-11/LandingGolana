@@ -1,0 +1,67 @@
+.footer {
+	width: 100%;
+	margin-top: 30px;
+	font-weight: 400;
+	color: var(--color-light);
+	background-color: rgb(20, 18, 18);
+
+	&__inner {
+		padding: 3em 4em;
+
+		@include row;
+		justify-content: space-around;
+		column-gap: 80px;
+
+		@include tablet {
+			@include column;
+			justify-content: center;
+		}
+	}
+
+	&__item {
+		line-height: 40px;
+	}
+
+	&__link-non-hover {
+		color: var(--color-gray-alt);
+	}
+
+	&__link {
+		color: var(--color-gray-alt);
+		font-weight: lighter;
+		@include hover {
+			color: var(--color-main-light);
+		}
+	}
+
+	.horizontal li {
+		display: inline-block;
+		transition: all 0.2s ease-in-out;
+
+		@include hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__column {
+		@include tablet {
+			margin-top: 30px;
+		}
+		h4 {
+			margin: 0;
+			margin-bottom: 10px;
+		}
+	}
+}
+.me {
+	margin-right: 5px;
+}
+.bi-telephone-fill,
+.bi {
+	margin-right: 5px;
+	position: relative;
+	top: 2px;
+}
+.bi-envelope-fill {
+	top: 4px;
+}

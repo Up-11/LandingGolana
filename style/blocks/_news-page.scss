@@ -1,0 +1,99 @@
+.news {
+	.element-animation {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+
+	.element-animation.element-show {
+		opacity: 1;
+		transition: all 1s ease-in-out;
+		transform: scale(1);
+	}
+	&__inner {
+		@include row;
+		justify-content: center;
+
+		@include tablet {
+			@include column;
+		}
+
+		column-gap: 30px;
+	}
+
+	&__item-container {
+		@include column;
+		@include tablet {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__content {
+		padding: 1em 1em;
+
+		&__text {
+			padding-top: 0.5em;
+		}
+	}
+	&__item {
+		border-radius: var(--border-radius-small);
+		background: linear-gradient(0deg, #fffafa 0%, #f7f7f7 100%);
+		box-shadow: 0px 0px 10px 0px #00000060;
+
+		@include tablet {
+			margin-top: 20px;
+		}
+	}
+
+	&__image {
+		border-radius: 7px 7px 0 0;
+	}
+	&__button {
+		margin-top: 20px;
+		cursor: pointer;
+	}
+}
+.large-item {
+	max-width: 600px;
+	width: 100%;
+}
+.small-item {
+	max-width: 290px;
+	width: 100%;
+	@include tablet {
+		max-width: 600px;
+		width: 100%;
+	}
+	img {
+		width: 100%;
+	}
+}
+.title-small {
+	@include fluid-text(22, 16);
+	padding: 0;
+}
+
+.small {
+	padding: 0.3em 0.4em;
+}
+.small-container {
+	@include column;
+
+	@include tablet {
+		align-items: center;
+	}
+}
+.small-item-row {
+	@include row;
+	column-gap: 10px;
+
+	justify-content: space-around;
+	@include tablet {
+		@include column;
+
+		justify-content: center;
+	}
+}
+.second-row {
+	margin-top: 12px;
+}
